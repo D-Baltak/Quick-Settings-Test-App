@@ -1,0 +1,181 @@
+.popup_quick_settings {
+    width: 420px;
+}
+
+.quick_settings_title {
+    font-size: 42px;
+    line-height: 58px;
+    text-align: center;
+    color: #c7d0d7;
+    background: #0d3358;
+    opacity: 0.5;
+    letter-spacing: -2px;
+    margin: 0;
+}
+
+.quick_settings_descr {
+    font-size: 20px;
+    font-weight: bold;
+    line-height: 36px;
+    color: #c7d0d7;
+    background: #0d3358;
+    opacity: 0.8;
+    letter-spacing: -1px;
+    text-align: center;
+}
+
+.quick_settings_content {
+    margin: 10px 0;
+    position: relative;
+    height: 220px;
+    overflow: hidden;
+    padding: 0 5px;
+    left: -5px;
+    width: 100%;
+}
+
+.quick_settings_list {
+    /*margin-top: -5px;*/
+}
+
+.quick_settings_item {
+    background: #30567a;
+    margin: 0 0 5px;
+    padding: 0 25px;
+    position: relative;
+    color: #889fb0;
+    -webkit-transition: all 300ms ease;
+    -moz-transition: all 300ms ease;
+    -ms-transition: all 300ms ease;
+    -o-transition: all 300ms ease;
+    transition: all 300ms ease;
+}
+
+.quick_settings_item.ng-enter:first-child {
+    margin-top: -43px;
+}
+
+.quick_settings_item.ng-enter-active:first-child {
+    margin-top: 0;
+}
+
+.quick_settings_item.ng-leave:first-child {
+    margin-top: 0;
+}
+
+.quick_settings_item.ng-leave-active:first-child {
+    margin-top: -43px;
+}
+
+.quick_settings_item_name,
+.quick_settings_item_value {
+    line-height: 38px;
+    font-size: 21px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.quick_settings_item_value {
+    float: right;
+    margin-right: 22px;
+}
+
+.quick_settings_item.idx_1,
+.quick_settings_item.idx_3 {
+    color: #a9b7c1;
+}
+
+.quick_settings_item.idx_2 {
+    background: #d7d44f;
+    margin: 10px 0;
+    outline: 5px solid #499183;
+    color: #303131;
+}
+
+.quick_settings_item.idx_2.inner_slider {
+    background: #4a9085;
+}
+
+.quick_settings_item_prev,
+.quick_settings_item_next {
+    position: absolute;
+    top: 65px;
+    left: 0;
+    background: url(../img/arrows_sprite.png) no-repeat;
+    width: 27px;
+    height: 19px;
+}
+
+.quick_settings_item_next {
+    top: 136px;
+    background-position: 0 -40px;
+}
+
+.quick_settings_value_block {
+    display: none;
+    position: absolute;
+    top: 4px;
+    right: 0;
+    height: 32px;
+    overflow: hidden;
+}
+
+.quick_settings_item.idx_2 .quick_settings_value_block {
+    display: block;
+    padding: 0 23px;
+}
+
+.quick_settings_value_list {
+    background: #d7d44f;
+}
+
+.quick_settings_value_item {
+    padding: 0 23px;
+    line-height: 32px;
+    white-space: nowrap;
+    font-size: 21px;
+    color: #303131;
+    font-weight: bold;
+    display: none;
+}
+
+.quick_settings_value_item.active {
+    display: block;
+}
+
+.quick_settings_value_item_prev,
+.quick_settings_value_item_next {
+    position: absolute;
+    top: 3px;
+    background: url(../img/arrows_sprite.png) no-repeat;
+    width: 19px;
+    height: 27px;
+}
+
+.quick_settings_value_item_prev {
+    left: 0;
+    background-position: 0 -127px;
+}
+
+.quick_settings_value_item_next {
+    right: 0;
+    background-position: 0 -80px;
+}
+
+.quick_settings_footer {
+    font-size: 20px;
+    background: #0d3358;
+    opacity: 0.6;
+    line-height: 36px;
+    overflow: hidden;
+}
+
+.quick_settings_footer .button_set {
+    float: left;
+    margin-left: 15px;
+}
+
+.quick_settings_footer .button_exit {
+    float: right;
+    margin-right: 15px;
+}

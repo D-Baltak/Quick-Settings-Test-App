@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="app">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<title>QuickSettings</title>
+
+		<!-- TODO : Common API -->
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/Widget.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/API/TVKeyValue.js"></script>
+		<script type="text/javascript" language="javascript" src="$MANAGER_WIDGET/Common/webapi/1.0/webapis.js"></script>
+
+		<!-- TODO : Javascript code -->
+		<script language="javascript" type="text/javascript" src="app/javascript/libs.min.js"></script>
+		<script language="javascript" type="text/javascript" src="app/javascript/Main.js"></script>
+    	<script language="javascript" type="text/javascript" src="app/javascript/app.min.js"></script>
+
+		<!-- TODO : Style sheets code -->
+		<link rel="stylesheet" href="app/stylesheets/Main.css" type="text/css">
+
+		<!-- TODO: Plugins -->
+
+	</head>
+
+	<body onload="Main.onLoad();" onunload="Main.onUnload();">
+
+		<!-- Dummy anchor as focus for key events -->
+		<a href="javascript:void(0);" id="anchor" onkeydown="Main.keyDown();"></a>
+		
+		<div ng-view>	
+	        <popup-quick-settings close-timer="20"></popup-quick-settings>
+	    </div>
+		<!-- TODO: your code here -->
+	</body>
+</html>
